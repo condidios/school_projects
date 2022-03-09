@@ -1,0 +1,13 @@
+00 read r1 #Fall time
+01 read r2 #Initial position
+02 read r3 #Initial velocity
+03 setn r4 -10 #Gravity
+04 mul r5 r1 r1 #Fall time * Fall time
+05 mul r6 r5 r4 #Fall time * Fall time * Gravity
+06 setn r7 2 # 
+07 div r8 r6 r7 #Fall time * Fall time * Grabity / 2
+08 mul r9 r3 r1 #Fall time * Initial velocity
+09 add r10 r8 r9 #
+10 add r11 r10 r2 #Final calcualtion
+11 write r11 #
+12 halt #
